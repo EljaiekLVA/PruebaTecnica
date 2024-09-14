@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados de Búsqueda - Tienda Virtual</title>
+  <link rel="stylesheet" href="/tienda-virtual/css/results.css"> <!-- Enlace al archivo CSS -->
+  <script src="/tienda-virtual/Js/results.js" defer></script>  <!-- Enlace al archivo JavaScript -->
+</head>
+<body>
+  <!-- Header con barra de búsqueda -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Tienda <span>Virtual</span></h1>
+      <a href="/tienda-virtual/view/index.html" class="back-button">Volver a la tienda</a>
+      <div class="search-form">
+        <input type="text" id="search" placeholder="Buscar productos...">
+        <button onclick="searchProducts()">Buscar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Resultados de búsqueda -->
+  <section class="results">
+    <h2>Resultados de Búsqueda</h2>
+    <div class="results-grid" id="results-grid">
+      <!-- Resultados cargados dinámicamente aquí -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tienda Virtual - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

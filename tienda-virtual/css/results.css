@@ -1,0 +1,149 @@
+/* Reset básico para eliminar márgenes y paddings por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.logo span {
+  color: #ff6f61;
+}
+
+/* Botón para volver a la tienda */
+.back-button {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 300px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar {
+  background-color: #2d2d2d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Barra de búsqueda */
+.search-form input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Título de resultados */
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Estilos para las categorías de productos */
+.category-section {
+  margin: 20px 0;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Grid para los productos de cada categoría */
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Botón de "Ver detalle" */
+.product-link {
+  text-decoration: none;
+  color: white;
+  background-color: #ff6f61;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-link:hover {
+  background-color: #d35f54;
+}
+
+.product-link:active {
+  transform: translateY(0);
+}
+
+.product-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}

@@ -1,0 +1,291 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base para el cuerpo del documento */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+/* Contenido dentro del encabezado, con diseño flexible */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para el botón de 'Volver' */
+.back-button {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para el botón de 'Volver' */
+.back-button:hover {
+  background-color: #ff4a3c;
+  transform: translateY(-2px);
+}
+
+/* Estilo del formulario de búsqueda */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del campo de entrada de texto en el formulario */
+.search-form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+/* Estilo del botón de búsqueda */
+.search-form button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Efecto hover para el botón de búsqueda */
+.search-form button:hover {
+  background-color: #ff4a3c;
+}
+
+/* Estilo para el contenedor de detalles del producto */
+.product-detail {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para la tarjeta del producto */
+.product-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 900px; /* Ajustar según necesidad */
+  margin: 0 auto;
+}
+
+/* Contenedor para la imagen del producto */
+.product-image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Estilo para la imagen del producto */
+.product-image {
+  width: 100%;
+  max-width: 250px; /* Tamaño más pequeño para la imagen */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contenedor para la información del producto */
+.product-info {
+  flex: 2;
+}
+
+/* Título del producto */
+.product-title {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+/* Descripción del producto */
+.product-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.product-price {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para el stock y la calificación */
+.product-stock,
+.product-rating {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Galería de imágenes adicionales */
+.product-images {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Miniaturas de imágenes adicionales */
+.product-image-thumb {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las miniaturas */
+.product-image-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor para los botones de compartir */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Estilo para los botones de compartir */
+.share-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para los botones de compartir */
+.share-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilo del texto en el pie de página */
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Mensaje al agregar un producto al carrito */
+.cart-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Estilo para el botón de "Agregar al carrito" */
+.add-to-cart-button {
+  background-color: #28a745; /* Verde que indica éxito */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Efectos hover, active y focus para el botón de "Agregar al carrito" */
+.add-to-cart-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.add-to-cart-button:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+}
+
+.add-to-cart-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.5); /* Resaltar cuando el botón está en foco */
+}
+
+/* Animación para mostrar el mensaje del carrito */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Estilo para la calificación del producto (estrellas) */
+.product-rating {
+  font-size: 1.2rem;
+  color: #f39c12; /* Color dorado para las estrellas */
+}
+
+.product-rating i {
+  margin-right: 3px;
+}
+
+.product-rating .fa-star,
+.product-rating .fa-star-half-alt {
+  color: #f39c12;
+}
+
+.product-rating .fa-star.far {
+  color: #e0e0e0; /* Color gris para estrellas vacías */
+}
+
+/* Estilo del botón para ver el carrito */
+.view-cart {
+  background-color: #2b43af;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
+}

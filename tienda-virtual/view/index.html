@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Tienda Virtual</title>
+  <link rel="stylesheet" href="/tienda-virtual/css/styles.css"> <!-- Enlaza al CSS -->
+  <script src="/tienda-virtual/Js/app.js" defer></script>  <!-- Enlaza al JS -->
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Tienda <span>Virtual</span></h1>
+      <div class="search-form">
+        <input type="text" id="search" placeholder="Buscar productos...">
+        <button onclick="searchProducts()">Buscar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Bienvenido a Tienda Virtual</h2>
+      <p>Encuentra los mejores productos a precios increíbles.</p>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section class="features">
+    <h3>Productos Destacados</h3>
+    <div class="features-grid" id="products-grid">
+      <!-- Productos cargados dinámicamente aquí -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tienda Virtual - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
